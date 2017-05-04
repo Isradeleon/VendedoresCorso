@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_house"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.utt.application.isradeleon.vendedorescorso.HouseActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/colorDarkGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/prev_button"
+                    android:background="@null"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ViewFlipper
+                    android:outAnimation="@android:anim/fade_out"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:id="@+id/photos_flipper"
+                    android:layout_width="200dp"
+                    android:layout_height="140dp">
+                </ViewFlipper>
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/next_button"
+                    android:background="@null"
+                    android:src="@drawable/ic_keyboard_arrow_right_white_36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:text="Ubicacion:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address"
+                    android:text="#44 int 99, calle nose que col centro hidalgo no se"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/house_city"
+                    android:textStyle="bold"
+                    android:text="Ciudad Nose, Coahuila."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:layout_gravity="right"
+                    android:id="@+id/maps_button"
+                    android:textColor="#fff"
+                    android:backgroundTint="@color/colorInfo"
+                    android:text="VER EN MAPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:text="Detalles:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Superficie: 70m2"
+                    android:textStyle="bold"
+                    android:id="@+id/superficie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/habitaciones"
+                    android:textStyle="bold"
+                    android:text="Habitaciones: 5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/banos"
+                    android:textStyle="bold"
+                    android:text="Baños: 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/comentarios"
+                    android:text="Comentarios: Casa muy bonita debe comprarla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:text="$ Costos:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <TextView
+                    android:id="@+id/precio_estimado"
+                    android:layout_gravity="center"
+                    android:text="Estimado: $7000000.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/precio_evaluado"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="Precio evaluado: $7000000.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.DrawerLayout>
